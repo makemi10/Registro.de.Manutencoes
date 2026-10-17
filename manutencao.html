@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Manutenção</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Registro de Manutenção</h1>
+
+    <input
+    type="text"
+    id="numero_maquina"
+    placeholder="Identificação da Máquina">
+
+<input
+    type="date"
+    id="data_manutencao">
+
+<label class="campo-label">
+    Descrição do Serviço
+</label>
+
+<textarea
+    id="descricao"
+    placeholder="Descreva o serviço realizado">
+</textarea>
+
+<label class="campo-label">
+    Motivo da Manutenção
+</label>
+
+<textarea
+    id="motivo"
+    placeholder="Informe o motivo da manutenção">
+</textarea>
+
+<input
+    type="text"
+    id="tecnico"
+    placeholder="Nome do Técnico">
+
+<select id="status">
+
+    <option value="">
+        Selecione o status
+    </option>
+
+    <option value="Pendente">
+        Pendente
+    </option>
+
+    </option>
+
+    <option value="Concluído">
+        Concluído
+    </option>
+
+</select>
+
+<button type="button" onclick="salvarManutencao()">
+    Salvar Manutenção
+</button>
+
+<button onclick="window.location='historico.html'">
+    Ver Histórico
+</button>
+
+</div>
+
+<script src="manutencao.js"></script>
+
+</body>
+</html>
